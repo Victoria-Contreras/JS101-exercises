@@ -26,8 +26,10 @@ function canWeGoToTheMovies() {
     for (let i = 0; i < days_of_week.length; i++) {
         dayOfWeek = `${days_of_week[i]}`
         //console.log(dayOfWeek);
-        //console.log(myFriendsSchedule[i])
-        /* testing: when i try to reference the objects it comes back undefined. meaning all the loops return the last else condition
+        console.log(myFriendsSchedule[i])
+        console.log(myFriendsSchedule[dayOfWeek])
+
+        //testing: when i try to reference the objects it comes back undefined. meaning all the loops return the last else condition
         if(myFriendsSchedule[dayOfWeek] == true && myMoneySchedule[dayOfWeek] >= 30){
             whatDaysCanWeGoToTheMovies.push(dayOfWeek);
             console.log(`On ${dayOfWeek}? Yes, lets go to the movies!!`)
@@ -36,9 +38,9 @@ function canWeGoToTheMovies() {
         }else{
             console.log(`On ${dayOfWeek}?  One of us can go to the movies`)
         }
-        */
+        
     }
-    console.log(`These are the days we can go to the movies: ${whatDaysCanWeGoToTheMovies.join(", ")}`)
+    //console.log(`These are the days we can go to the movies: ${whatDaysCanWeGoToTheMovies.join(", ")}`)
 
 }
 
